@@ -63,6 +63,7 @@ function postData() {
     xhr.onload = function () {
         if (xhr.status === 201 && xhr.readyState === 4) {
             var post = xhr.responseText;
+            console.log(post);
         };
     };
     xhr.send(json);
